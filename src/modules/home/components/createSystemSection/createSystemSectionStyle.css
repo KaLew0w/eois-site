@@ -1,0 +1,119 @@
+.features-section {
+	padding: 96px 24px;
+	color: #fff;
+	font-family: "Nagel", sans-serif;
+}
+
+.features-container {
+	max-width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.features-title {
+	font-size: 2rem;
+	font-weight: 300;
+	margin-bottom: 2rem;
+	text-align: left;
+}
+
+.features-title-highlight {
+	color: #00f0d4;
+	display: inline-block;
+}
+
+.scroll-wrapper {
+	position: relative;
+}
+
+.scroll-container {
+	display: flex;
+	gap: 24px;
+	overflow-x: auto;
+	cursor: grab;
+	padding-right: 24px;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+}
+
+.scroll-container::-webkit-scrollbar {
+	display: none;
+}
+
+.info-card {
+	min-width: 400px;
+	padding-left: 0 !important;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.feature-card {
+	min-width: 420px;
+	max-width: 420px;
+	padding: 1rem;
+	border-radius: 16px;
+	background: radial-gradient(circle at 100% 100%, #32ffb1 0%, #ffffff 25%);
+	position: relative;
+	flex-shrink: 0;
+}
+
+.feature-card h3 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin-bottom: 8px;
+	color: #000;
+}
+
+.feature-card p {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: #000;
+}
+
+.feature-card img {
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	width: 180px;
+	height: 180px;
+	object-fit: contain;
+	pointer-events: none;
+	user-select: none;
+}
+
+.fade-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 100%;
+	background: linear-gradient(to left, #191919 0%, rgba(25, 25, 25, 0) 100%);
+	pointer-events: none;
+	z-index: 10;
+}
+
+.scroll-arrow-mobile {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem; /* gap между текстом и стрелкой */
+	color: white;
+	font-weight: 400; /* font-normal */
+	margin-top: 2rem; /* mt-8 */
+	font-size: 16px;
+	/* По умолчанию скрываем на больших экранах */
+	display: none;
+}
+
+/* Показываем только на мобильных экранах */
+@media (max-width: 767px) {
+	.scroll-arrow-mobile {
+		display: flex;
+	}
+}
+
+.arrow-image {
+	height: 2rem; /* h-8 */
+	width: auto;
+	user-select: none;
+	pointer-events: none;
+}

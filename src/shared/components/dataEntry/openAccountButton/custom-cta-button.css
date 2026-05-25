@@ -1,0 +1,92 @@
+.custom-cta-button-home {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 64px;
+	width: 220px;
+	padding: 0 24px;
+	margin-top: 32px; /* теперь точно сработает */
+	border-radius: 9999px;
+	font-weight: 300;
+	font-size: 1rem;
+	color: white;
+	border: 1px solid white;
+	background-color: transparent;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 1;
+	transition: background 0.4s ease;
+  }
+  
+  .custom-cta-button-home::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 64px;
+	background: linear-gradient(to bottom, #00eefd, #32ffb1);
+	border-radius: 9999px;
+	z-index: 1;
+	transition: width 0.4s ease;
+  }
+  
+  .custom-cta-button-home:hover::before {
+	width: 100%;
+  }
+  
+  .custom-cta-button-home span {
+	position: relative;
+	z-index: 2;
+	transition: color 0.3s ease;
+  }
+  
+  .custom-cta-button-home:hover span {
+	color: black;
+  }
+  
+  .custom-cta-button-home img {
+	position: relative;
+	z-index: 2;
+	width: 20px;
+	height: 20px;
+	margin-left: auto;
+	transition: transform 0.3s ease;
+  }
+  
+  .custom-cta-button-home:hover img {
+	transform: translateX(4px);
+  }
+  
+  /* Мобильная адаптация */
+  @media (max-width: 480px) {
+	.custom-cta-button-home {
+	  width: 180px !important;
+	  height: 48px !important;
+	  font-size: 0.95rem !important;
+	  padding: 0 16px !important;
+	  margin-top: 42px !important;
+	  display: inline-flex !important;
+	}
+  
+	.custom-cta-button-home::before {
+	  width: 48px;
+	}
+  
+	.custom-cta-button-home img {
+	  width: 16px;
+	  height: 16px;
+	}
+  }
+  
+  /* Мобильная адаптация (дополнительно под планшеты) */
+  @media screen and (max-width: 768px) {
+	.custom-cta-button-home {
+	  width: 100%;
+	  max-width: 280px;
+	  margin-left: 0;
+	  margin-right: auto;
+	  height: 52px;
+	}
+  }

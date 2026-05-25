@@ -1,0 +1,122 @@
+[
+	{
+		"id": "t1",
+		"dt": "2025-08-24T12:20:00Z",
+		"descr": "Kyrgyz Air • Bishkek",
+		"category": "Путешествия",
+		"amount": -12300,
+		"currency": "RUB",
+		"status": "done",
+		"type": "expense"
+	},
+	{
+		"id": "t2",
+		"dt": "2025-08-23T09:10:00Z",
+		"descr": "Coffee Lab",
+		"category": "Кафе",
+		"amount": -390,
+		"currency": "RUB",
+		"status": "done",
+		"type": "expense"
+	},
+	{
+		"id": "t3",
+		"dt": "2025-08-22T18:40:00Z",
+		"descr": "Возврат кэшбэка",
+		"category": "Кэшбэк",
+		"amount": 320,
+		"currency": "RUB",
+		"status": "done",
+		"type": "income"
+	},
+	{
+		"id": "t4",
+		"dt": "2025-08-21T14:00:00Z",
+		"descr": "Входящий перевод",
+		"category": "Пополнение",
+		"amount": 200,
+		"currency": "USD",
+		"status": "done",
+		"type": "transfer"
+	},
+	{
+		"id": "t5",
+		"dt": "2025-08-20T15:00:00Z",
+		"descr": "Вывод BTC",
+		"category": "Крипто",
+		"amount": -0.01,
+		"currency": "BTC",
+		"status": "pending",
+		"type": "crypto"
+	},
+	{
+		"id": "t6",
+		"dt": "2025-08-19T11:12:00Z",
+		"descr": "Пополнение через кассу",
+		"category": "Пополнение",
+		"amount": 5000,
+		"currency": "KGS",
+		"status": "done",
+		"type": "income"
+	},
+	{
+		"id": "t7",
+		"dt": "2025-08-18T10:05:00Z",
+		"descr": "Обмен USD→RUB",
+		"category": "Обмен",
+		"amount": -50,
+		"currency": "USD",
+		"status": "done",
+		"type": "exchange"
+	},
+	{
+		"id": "t8",
+		"dt": "2025-08-18T10:05:00Z",
+		"descr": "Обмен USD→RUB",
+		"category": "Обмен",
+		"amount": 4600,
+		"currency": "RUB",
+		"status": "done",
+		"type": "exchange"
+	},
+	{
+		"id": "t9",
+		"dt": "2025-08-17T08:45:00Z",
+		"descr": "Комиссия SWIFT",
+		"category": "Комиссия",
+		"amount": -15,
+		"currency": "USD",
+		"status": "posted",
+		"type": "fee"
+	},
+	{
+		"id": "t10",
+		"dt": "2025-08-16T13:30:00Z",
+		"descr": "Перевод другу",
+		"category": "Перевод",
+		"amount": -1200,
+		"currency": "RUB",
+		"status": "done",
+		"type": "transfer"
+	},
+	{
+		"id": "t11",
+		"dt": "2025-08-16T13:30:00Z",
+		"descr": "Получено от друга",
+		"category": "Перевод",
+		"amount": 13,
+		"currency": "USDT",
+		"status": "done",
+		"type": "transfer"
+	},
+	{
+		"id": "t12",
+		"dt": "2025-08-15T09:00:00Z",
+		"descr": "Binance Earn",
+		"category": "Крипто",
+		"amount": 0.002,
+		"currency": "BTC",
+		"status": "done",
+		"type": "crypto"
+	}
+]

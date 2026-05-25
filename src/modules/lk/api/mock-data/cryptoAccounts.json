@@ -1,0 +1,29 @@
+ [
+  {
+    "id": 1,
+    "asset": "BTC",
+    "network": "BTC",
+    "balance": 0.21,
+    "currency": "BTC",
+    "depositAddress": null,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "asset": "USDT",
+    "network": "TRC20",
+    "balance": 3100,
+    "currency": "USDT",
+    "depositAddress": null,
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "asset": "ETH",
+    "network": "ERC20",
+    "balance": 1.8,
+    "currency": "ETH",
+    "depositAddress": null,
+    "status": "active"
+  }
+]

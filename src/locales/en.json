@@ -1,0 +1,352 @@
+{
+  "login": {
+    "title": "Login to your account",
+    "subtitle": "Welcome to The One",
+    "email_label": "Email",
+    "password_label": "Password",
+    "remember": "Remember me",
+    "forgot": "Forgot password?",
+    "action": "Log In",
+    "no_account": "Don't have an account?",
+    "register": "Register"
+  },
+  "register": {
+    "title": "Sign Up",
+    "subtitle": "Create an account to access The One",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "password_label": "Password",
+    "confirm_label": "Confirm Password",
+    "terms_agree": "I agree to the",
+    "terms_link": "Terms of Service",
+    "privacy_link": "Privacy Policy",
+    "action": "Register",
+    "have_account": "Already have an account?",
+    "login": "Log In"
+  },
+  "verify": {
+    "title": "Verify the code",
+    "subtitle": "We sent a verification code to your email",
+    "code_label": "Verification Code",
+    "action": "Verify",
+    "not_received": "Didn't receive the code?",
+    "resend": "Resend"
+  },
+  "2fa": {
+    "title": "Two-Factor Authentication",
+    "subtitle": "Enter the code from your authenticator app",
+    "code_label": "Authenticator Code",
+    "action": "Verify",
+    "cannot_access": "Can't access your app?",
+    "use_backup": "Use backup code"
+  },
+  "reset": {
+    "title": "Reset Password",
+    "subtitle": "Enter a new password for your account",
+    "new_label": "New Password",
+    "confirm_label": "Confirm Password",
+    "action": "Reset Password"
+  },
+  "reset_request": {
+    "title": "Account Recovery",
+    "subtitle": "Enter your email to receive a reset link",
+    "email_label": "Email",
+    "action": "Send Link",
+    "back": "Back to Login"
+  },
+  "backup": {
+    "title": "Backup Code",
+    "subtitle": "Enter one of the backup codes you saved earlier",
+    "code_label": "Backup Code",
+    "action": "Verify",
+    "back": "Back to 2FA"
+  },
+  "confirm": {
+    "title": "Email Sent",
+    "subtitle": "We have sent a confirmation link to your email. Please check your inbox and follow the link to proceed.",
+    "back_login": "Back to Login"
+  },
+  "seo": {
+    "base_title": "TheOne — Payment solution",
+    "contacts_title": "TheOne — Contacts"
+  },
+  "home": {
+    "header": {
+      "nav_home": "Home",
+      "nav_for_individuals": "For Individuals",
+      "nav_for_business": "For Business",
+      "nav_contacts": "Contacts",
+      "cta_apply": "Apply now",
+      "cta_login": "Log in",
+      "burger_open": "☰",
+      "burger_close": "✖"
+    },
+    "hero": {
+      "title_prefix": "TheOne –",
+      "title_line": "The Only Finance",
+      "title_suffix": "App You Need",
+      "subtitle_strong": "Next-Generation Financial Ecosystem: ",
+      "subtitle": "a licensed payment institution, multi-currency platform, and crypto exchange — all in TheOne interface.",
+      "open_account": "Open an Account"
+    },
+    "features": {
+      "title": "We are building ",
+      "title_highlight": "the Unified ",
+      "title_highlight2": "Ecosystem of the Future",
+      "scroll_hint": "Swipe right",
+      "intro": "All products work in a single client interface — no extra apps, no switching, no time or money lost on transfers and conversions.",
+      "license_title": "NBKR licenses",
+      "license_desc": "Payment and crypto licenses, full legal compliance.",
+      "multicurrency_title": "Multi‑currency platform",
+      "multicurrency_desc": "BTC, ETH, USDT, USD, EUR, KGS — all in one wallet.",
+      "unified_title": "Unified interface",
+      "unified_desc": "Cards, crypto, exchange, and payments — all connected, all synchronized."
+    },
+    "services": {
+      "tab_individuals": "For Individuals",
+      "tab_business": "For Business",
+      "title_slides": "Designed For:",
+      "individuals": {
+        "slides": [
+          {
+            "title": "Private users & travelers",
+            "desc": "Shop globally with zero fees and instant currency conversion.",
+            "title2": "Specialists working abroad",
+            "desc2": "Send money home in your preferred currency — fast and fee-free."
+          },
+          {
+            "title": "Digital nomads and freelancers",
+            "desc": "Receive payments from clients worldwide and manage your funds freely, wherever you are.",
+            "title2": "Those who work with crypto and fiat",
+            "desc2": "Instantly buy, exchange and invest with the crypto market."
+          },
+          {
+            "title": "Those working with both crypto and fiat",
+            "desc": "Instantly buy, exchange, and invest in crypto markets.",
+            "title2": null,
+            "desc2": null
+          }
+        ],
+        "cards": [
+          {
+            "title": "Payment Cards",
+            "desc": "TheOne multi‑currency cards — shop anywhere, withdraw cash, and enjoy automatic currency conversion at the point of payment.",
+            "label": "For Individuals"
+          },
+          {
+            "title": "Instant Transfers",
+            "desc": "Send money instantly between accounts and users. Transfer funds to family, friends, or clients — anywhere in the world.",
+            "label": "For Individuals"
+          },
+          {
+            "title": "Fiat & Crypto Exchange",
+            "desc": "Built-in exchange with live market rates — no hidden fees. Transparent conversions between all your assets, directly in the interface.",
+            "label": "For Individuals"
+          },
+          {
+            "title": "Asset Analytics & Management",
+            "desc": "Track your funds, monitor transaction history, and generate reports. From visual dashboards to exportable statements — everything is clear and accessible.",
+            "label": "For Individuals"
+          }
+        ]
+      },
+      "business": {
+        "slides": [
+          {
+            "title": "Online businesses, eCommerce & EdTech",
+            "desc": "Accept payments in any currency or format — and boost your conversion rates.",
+            "title2": "Subscription platforms & marketplaces",
+            "desc2": "Enable recurring payments with multi-currency support."
+          },
+          {
+            "title": "IT companies, startups & international projects",
+            "desc": "Manage global accounts and payment flows without banking bureaucracy.",
+            "title2": "Payment services & fintechs seeking a partner platform",
+            "desc2": "Launch your service on our infrastructure — with ready-to-use licenses."
+          },
+          {
+            "title": "White‑label solutions",
+            "desc": "Launch a fintech under your brand: accounts, cards, payments and exchange — everything via API.",
+            "title2": "Those who work with crypto and fiat",
+            "desc2": "Instantly buy, exchange and invest with the crypto market."
+          }
+        ],
+        "cards": [
+          {
+            "title": "Business accounts & wallets",
+            "desc": "Manage your business finances in a single account. Funds storage, multi‑currency payroll, tax reports, etc.",
+            "label": "for business"
+          },
+          {
+            "title": "Payment acceptance for business",
+            "desc": "Built‑in payment service with high conversion. Supports cards, Apple Pay, Google Pay, wallets and crypto.",
+            "label": "for business"
+          },
+          {
+            "title": "White‑label solutions",
+            "desc": "Launch a fintech under your brand. Accounts, cards, payments, exchange — all via API and franchise model.",
+            "label": "for business"
+          },
+          {
+            "title": "Instant currency conversion",
+            "desc": "Built‑in conversion inside your business account. Issue invoices and receive funds in your preferred currency regardless of the currency your client pays in.",
+            "label": "for business"
+          },
+          {
+            "title": "Analytics, reports, exports",
+            "desc": "Full control of funds movement and APIs for integrations. Export detailed analytics in formats convenient for accounting, tax or other purposes.",
+            "label": "for business"
+          },
+          {
+            "title": "Infrastructure for business (API + SDK)",
+            "desc": "Connect TheOne to your product. Payment gateways, analytics, KYC/AML, reporting and flow configuration.",
+            "label": "for business"
+          }
+        ]
+      }
+    },
+    "statistics": {
+      "title_prefix": "TheOne.",
+      "title_highlight": "The Only",
+      "title_highlight2": "Finance App You Need",
+      "country": "Kyrgyzstan",
+      "items": [
+        { "desc": "currencies and cryptocurrencies" },
+        { "desc": "countries and regions covered" },
+        { "desc": "payment acceptance methods" },
+        { "desc": "platform uptime" },
+        { "desc": "compliance with PCI DSS, ISO 27001 and GDPR" }
+      ],
+      "title_secondary_prefix":"TheOne. The Only & Secure",
+      "title_secondary_highlight": "Finance App You Need",
+      "cards": [
+        {
+          "title": "NBKR Licenses",
+          "desc": "Registered as a payment institution and cryptocurrency exchange in Kyrgyzstan."
+        },
+        {
+          "title": "KYC / AML modules",
+          "desc": "User and transaction verification via Sumsub and HermesPro."
+        },
+        {
+          "title": "2FA & Biometrics",
+          "desc": "Two-factor authentication, fingerprint login, and Face ID support."
+        },
+        {
+          "title": "Secure Asset Storage",
+          "desc": "Offline (cold) storage of crypto assets with withdrawal delay features and encryption."
+        },
+        {
+          "title": "International Standards",
+          "desc": "Full compliance with PCI DSS, ISO 27001, and GDPR."
+        },
+        {
+          "title": "Data & Server Protection",
+          "desc": "Servers hosted in certified data centers, with backup systems and 24/7 monitoring."
+        }
+      ]
+    },
+    "system": {
+      "title": "How the TheOne ecosystem works",
+      "subtitle_html": "<a href=\"#\">One interface</a> — endless possibilities.<br/>Everything is connected. Everything is synchronized.<br/><a href=\"#\" class=\"bold\">All within a single ecosystem.</a>",
+      "cards": [
+        {
+          "title": "Unified financial interface",
+          "items": [
+            "Secure storage of both fiat and crypto",
+            "Full control over accounts, cards, and transactions (personal and business)",
+            "Instant currency conversion",
+            "Banking services included"
+          ]
+        },
+        {
+          "title": "Built-in payment processing service for businesses within the TheOne ecosystem",
+          "items": [
+            "One-click payments in any currency",
+            "Auto‑conversion at checkout",
+            "Accept payments from clients worldwide",
+            "Integrated with TheOne wallets and crypto assets via Ofex"
+          ]
+        },
+        {
+          "title": "Integrated cryptocurrency exchange — fully connected with all other services",
+          "items": [
+            "Trading 150+ cryptocurrencies",
+            "Instant top‑up from TheOne wallet (or any other)",
+            "Crypto payment processing via CardFly",
+            "Build and manage your crypto portfolio, set up auto-buys, track performance in real time"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "TheOne. ",
+      "title_highlight": "The Only Finance App You Need",
+      "subtitle": "Fill out the form and our manager will contact you within a business day."
+    },
+    "partners": {
+      "visa": "Visa",
+      "mastercard": "Mastercard",
+      "elcart": "Elcart"
+    },
+    "timeline": {
+      "title_prefix": "TheOne.",
+      "title_highlight": "The Only & Fast-Growing Finance App You Need",
+      "items": [
+        {"year":"2024","month":"","desc":"Licensing and technical infrastructure development"},
+        {"year":"2025","month":"(September)","desc":"Launch in Kyrgyzstan"},
+        {"year":"2025","month":"(October)","desc":"Expansion into the MENA"},
+        {"year":"2026","month":"(October)","desc":"Licensing in UAE (ADGM/DIFC)"},
+        {"year":"2026","month":"(September)","desc":"Partner integrations with banks and crypto exchanges"},
+        {"year":"2027","month":"","desc":"Launch of BaaS platform for global fintechs"}
+      ]
+    },
+    "footer": {
+      "menu_title": "Menu",
+      "menu": {
+        "home": "Home",
+        "individuals": "For individuals",
+        "business": "For business",
+        "contacts": "Contacts",
+        "licenses": "Licenses",
+        "public_offer": "Public offer",
+        "privacy_policy": "Privacy policy",
+        "personal_data_consent": "Consent to personal data processing"
+      },
+      "legal": {
+        "company_full": "Closed Joint Stock Company “Only Finance”. TIN 02011202410361. OKPO 33476663.",
+        "license_payment": "License No. 11, issued by the Financial Market Regulation and Supervision Service under the Ministry of Economy and Commerce of the Kyrgyz Republic on January 17, 2025, for the right to operate as a virtual asset service provider (virtual asset trading operator, crypto exchange).",
+        "license_operator": "License No. 2058151124 issued by the National Bank of the Kyrgyz Republic on November 15, 2024 for the right to operate as a payment system operator for receiving, processing and delivering financial information (processing, clearing).",
+        "compliance": "We operate in accordance with the legislation of the Kyrgyz Republic and international KYC/AML standards.",
+        "address": "Kyrgyzstan, Bishkek, Pervomaysky district, Panfilov Street, 145, office 20",
+        "copyright": "© 2026 TheOne — All rights reserved. «Only Finance» CJSC"
+      }
+    },
+    "contactForm": {
+      "name_placeholder": "Name*",
+      "email_placeholder": "E-mail*",
+      "phone_placeholder": "Phone",
+      "company_placeholder": "Company / website",
+      "message_placeholder": "Comment",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "disclaimer": "By submitting the form, you agree to the processing of personal data.",
+      "success_title": "Request sent",
+      "success_text": "We will contact you shortly.",
+      "error_title": "Submission error",
+      "error_submit": "Submission error. Please try again later.",
+      "error_network": "Unable to connect to the server.",
+      "validation_error": "Validation error",
+      "validation_error_text": "Please check that all fields are filled correctly",
+      "sending": "Sending...",
+      "sending_description": "Please wait",
+      "contact_phones": "Phones",
+      "contact_email": "Email",
+      "contact_address": "Address",
+      "contact_address_text": "Kyrgyzstan, Bishkek, Pervomayskiy district, \nPanfilov Street, 145, Office 20",
+      "contact_title1": "Any questions?",
+      "contact_title2": "Get in touch with us in a way that's most convenient for you",
+      "contact_desc": "We're here to answer all your inquiries and help you seamlessly integrate TheOne into your business."
+    }
+  }
+}

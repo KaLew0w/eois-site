@@ -1,0 +1,20 @@
+/* Regular */
+@font-face {
+    font-family: 'Nagel';
+    src: url('./nagel_regular.woff2') format('woff2'),
+         url('../assets/fonts/nagel_regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: 'Nagel';
+    src: url('./nagel_bold.woff2') format('woff2'),
+         url('./nagel_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  

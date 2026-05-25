@@ -1,0 +1,19 @@
+* {
+    font-family: 'Nagel', sans-serif;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+a:hover{
+    color: #00eefd;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #00eefd, #32ffb1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

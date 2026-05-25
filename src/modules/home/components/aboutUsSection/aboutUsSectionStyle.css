@@ -1,0 +1,21 @@
+/* Для мобилки */
+.mobile-hero-image {
+	position: absolute;
+	bottom: -80px;
+	right: 0px;
+	width: 950px;
+	object-fit: contain;
+	z-index: 0;
+	transform: scale(1.2);
+}
+
+/* Для десктопа */
+.desktop-hero-image {
+	position: absolute;
+	bottom: -120px;
+	right: -120px;
+	width: 800px;
+	max-width: none;
+	object-fit: contain;
+	z-index: 0;
+}

@@ -1,0 +1,25 @@
+.cta-button {
+    margin: 12px auto 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#btnPay {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+#btnIssueCard {
+    margin: 0;
+}
+
+#btnToggleFreeze {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+}
+

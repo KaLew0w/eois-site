@@ -1,0 +1,113 @@
+#langMenu {
+	transform: rotateX(-90deg);
+	/* Изначально свернуто вверх */
+	transform-origin: top;
+	/* Точка поворота сверху */
+	opacity: 0;
+	pointer-events: none;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#langMenu.open {
+	transform: rotateX(0deg);
+	/* Раскрыто */
+	opacity: 1;
+	pointer-events: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+.language-switcher {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+}
+
+.lang-button {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: white;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 0.875rem;
+}
+
+.lang-flag {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.arrow-lang {
+	transition: transform 0.2s ease;
+}
+
+.arrow-lang.open {
+	transform: rotate(180deg);
+}
+
+.lang-menu {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin-top: 4px;
+	border-radius: 4px;
+	min-width: 100%;
+	opacity: 0;
+	pointer-events: none;
+	transform: scaleY(0.95);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	z-index: 10;
+	padding: 0;
+
+	/* эффект размытого стекла */
+	/* background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(10px) saturate(1.2);
+	-webkit-backdrop-filter: blur(10px) saturate(1.2);
+	border: 1px solid rgba(255, 255, 255, 0.25); */
+}
+
+.lang-menu.open {
+	opacity: 1;
+	pointer-events: auto;
+	transform: scaleY(1);
+	padding: 0;
+}
+
+lang-menu.open {
+	opacity: 1;
+	pointer-events: auto;
+	transform: scaleY(1);
+}
+
+.lang-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 5px 0px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	border-color: transparent;
+}
+
+.lang-item:hover {
+	color: #00f0d4;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 680px) {
+	.lang-button {
+		font-size: 0.9rem !important;
+	}
+
+	.lang-item {
+		font-size: 0.9rem !important;
+	}
+}

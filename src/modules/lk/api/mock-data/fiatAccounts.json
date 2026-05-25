@@ -1,0 +1,26 @@
+ [
+  {
+    "currency": "RUB",
+    "name": "Основной",
+    "balance": "₽ 620 000",
+    "iban": "RU35 0004 2618 9895 95",
+    "account": "40817 810 0 0426 189895",
+    "active": true
+  },
+  {
+    "currency": "KGS",
+    "name": "Счёт 1",
+    "balance": "KGS 5 000",
+    "iban": "KG99 0001 0199 7179 79",
+    "account": "40817 417 0 0101 997179",
+    "active": true
+  },
+  {
+    "currency": "USD",
+    "name": "Savings",
+    "balance": "$ 2 350,00",
+    "iban": "US46 0001 1157 5466 66",
+    "account": "40817 840 0 0111 575466",
+    "active": true
+  }
+]

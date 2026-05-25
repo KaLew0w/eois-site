@@ -1,0 +1,71 @@
+[
+  {
+    "id": "card-1",
+    "brand": "VISA",
+    "name": "RUB • Основная",
+    "pan": "5321872000009412",
+    "exp": "10/27",
+    "cvv": "432",
+    "currency": "RUB",
+    "balance": "620000",
+    "active": true,
+    "gradient": "mint",
+    "isPhysical": true,
+    "linkedWalletId": null,
+    "limits": { "day": 500000, "week": 1500000, "month": 6000000 },
+    "security": {
+      "online": true,
+      "atm": true,
+      "foreign": true,
+      "contactless": true,
+      "require3DS": true
+    },
+    "walletTokens": { "google": false, "apple": false }
+  },
+  {
+    "id": "card-2",
+    "brand": "MASTERCARD",
+    "name": "USD • Путешествия",
+    "pan": "5450123400001234",
+    "exp": "11/26",
+    "cvv": "221",
+    "currency": "USD",
+    "balance": "1530",
+    "active": true,
+    "gradient": "sunset",
+    "isPhysical": false,
+    "linkedWalletId": null,
+    "limits": { "day": 10000, "week": 30000, "month": 120000 },
+    "security": {
+      "online": true,
+      "atm": true,
+      "foreign": true,
+      "contactless": true,
+      "require3DS": true
+    },
+    "walletTokens": { "google": false, "apple": false }
+  },
+  {
+    "id": "card-3",
+    "brand": "MASTERCARD",
+    "name": "USD • Заначка",
+    "pan": "9417123400001234",
+    "exp": "11/28",
+    "cvv": "331",
+    "currency": "USD",
+    "balance": "1200",
+    "active": true,
+    "gradient": "royal",
+    "isPhysical": false,
+    "linkedWalletId": null,
+    "limits": { "day": 20000, "week": 30000, "month": 120000 },
+    "security": {
+      "online": true,
+      "atm": true,
+      "foreign": true,
+      "contactless": true,
+      "require3DS": true
+    },
+    "walletTokens": { "google": false, "apple": false }
+  }
+]

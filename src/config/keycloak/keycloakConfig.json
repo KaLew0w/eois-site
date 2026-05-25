@@ -1,0 +1,26 @@
+{
+  "localhost": {
+    "keycloakUrl": "http://localhost:8080/auth",
+    "realm": "the-one-lk",
+    "clientId": "react-cli",
+    "apiBaseUrl": "http://localhost:5173"
+  },
+  "dev": {
+    "keycloakUrl": "https://dev",
+    "realm": "the-one-lk",
+    "clientId": "react-cli",
+    "apiBaseUrl": "https://dev"
+  },
+  "test": {
+    "keycloakUrl": "https://test",
+    "realm": "the-one-lk",
+    "clientId": "react-cli",
+    "apiBaseUrl": "https://test"
+  },
+  "prod": {
+    "keycloakUrl": "https://prod",
+    "realm": "the-one-lk",
+    "clientId": "react-cli",
+    "apiBaseUrl": "https://prod"
+  }
+}

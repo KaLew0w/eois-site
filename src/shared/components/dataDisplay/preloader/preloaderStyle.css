@@ -1,0 +1,25 @@
+#preloader {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	background-color: #181818;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.5s ease;
+}
+
+#preloader video {
+	width: 50vw;
+	/* четверть ширины экрана */
+	max-width: 620px;
+	height: auto;
+}
+
+@media (max-width: 768px) {
+	#preloader video {
+		width: 100vw;
+		/* max-width: 400px;
+		height: auto; */
+	}
+}

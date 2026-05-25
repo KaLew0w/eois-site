@@ -1,0 +1,242 @@
+.hero-section {
+    position: relative;
+    padding: 80px 24px 100px;
+    min-height: 700px;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .hero-left .hero-title {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 42px;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-left .hero-title {
+      font-size: 64px;
+    }
+  }
+  
+  .gradient-title {
+    background: linear-gradient(to bottom, #00eefd, #32ffb1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nowrap {
+    white-space: nowrap;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 24px;
+    max-width: 520px;
+  }
+  
+  .cta-button {
+    margin-top: 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+  
+  .hero-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .hero-image.mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -380px;
+    width: 100%;
+    max-width: none;
+    object-fit: contain;
+  }
+  
+  .hero-image.desktop {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-image.mobile {
+      display: none;
+    }
+    .hero-image.desktop {
+      display: block;
+      width: 500px;
+      object-fit: contain;
+      transform: scale(1.25);
+      transition: transform 0.5s;
+    }
+  }
+  
+
+/* section 2 */
+
+.features-section {
+  padding: 96px 24px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.features-title {
+  color: #fff !important;
+  font-weight: 300 !important;
+  text-align: center;
+  margin-bottom: 24px !important;
+}
+
+@media (min-width: 768px) {
+  .features-title {
+    font-size: 42px !important;
+    text-align: left;
+    margin-bottom: 48px !important;
+  }
+}
+
+.highlight {
+  color: #00f0d4;
+}
+
+.desktop-break {
+  display: none;
+}
+@media (min-width: 768px) {
+  .desktop-break {
+    display: block;
+  }
+}
+
+.mobile-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .mobile-subtitle {
+    display: none;
+  }
+}
+
+.scroll-container {
+  position: relative;
+}
+
+.fade-right {
+  display: none;
+}
+@media (min-width: 768px) {
+  .fade-right {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 96px;
+    background: linear-gradient(to right, transparent, #000);
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+
+.scroll-content {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-right: 24px;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-content::-webkit-scrollbar {
+  display: none;
+}
+
+.info-card {
+  min-width: 400px;
+  max-width: 400px;
+  background: #191919 !important;
+  color: #fff !important;
+  border-radius: 16px !important;
+  padding: 16px !important;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .info-card {
+    display: flex;
+  }
+}
+
+.arrow-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.arrow-img {
+  height: 32px;
+  width: auto;
+}
+
+.mobile-only {
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.feature-card {
+  min-width: 420px;
+  max-width: 420px;
+  border-radius: 16px !important;
+  overflow: visible !important;
+  position: relative;
+  background: radial-gradient(circle at 100% 100%, #32ffb1 0%, #ffffff 25%) !important;
+}
+
+.feature-text {
+  position: relative;
+  z-index: 10;
+  width: 50%;
+}
+
+.feature-title {
+  font-weight: 300 !important;
+  font-size: 22px !important;
+}
+
+.feature-img {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 176px;
+  height: 176px;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+  

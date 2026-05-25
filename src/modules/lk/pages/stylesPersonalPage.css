@@ -1,0 +1,81 @@
+.cta-button {
+    border-radius: 0.75rem !important;
+    font-size: 0.875rem !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+#btnTransfer {
+    font-size: 0.875rem !important;
+}
+
+#btnCreateFiat {
+    font-size: 0.875rem !important;
+}
+
+#btnBackup {
+    font-size: 0.875rem !important;
+}
+
+#btnCreateCrypto {
+    font-size: 0.875rem !important;
+}
+
+#btnOwnSend {
+    font-size: 0.875rem !important;
+}
+
+#btnP2P {
+    font-size: 0.875rem !important;
+}
+
+#btnExt {
+    font-size: 0.875rem !important;
+}
+
+#btnExportCSV {
+    margin: 0;
+    font-size: 0.875rem !important;
+}
+
+#btnToggleFreeze {
+    font-size: 0.875rem !important;
+}
+
+#btnPay {
+    font-size: 0.875rem !important;
+}
+
+#btnIssueCard {
+    font-size: 0.875rem !important;
+}
+
+#btnRename {
+    font-size: 0.875rem !important;
+}
+
+#btnSaveLimits {
+    font-size: 0.875rem !important;
+}
+
+#btnSaveSecurity {
+    font-size: 0.875rem !important;
+}
+
+#btnDeleteCard {
+    font-size: 0.875rem !important;
+}
+
+#btnSaveProfile {
+    font-size: 0.875rem !important;
+}
+
+.payment-buttons a {
+    color: black !important;
+}

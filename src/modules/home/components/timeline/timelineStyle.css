@@ -1,0 +1,151 @@
+.timeline-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .timeline-container {
+        grid-template-columns: 1fr auto;
+        align-items: start;
+    }
+}
+
+.timeline-header {
+    position: sticky;
+    top: 240px;
+    align-self: start;
+    height: max-content;
+    /* фиксируем заголовок */
+}
+
+.timeline-month {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+
+.timeline-title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.timeline-title span {
+    color: #00f0d4;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .timeline-title {
+        font-size: 1.875rem;
+        line-height: 1.375;
+    }
+}
+
+.timeline-items {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 15px;
+    top: 3.7rem;
+    bottom: -10rem;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 0;
+    height: 1260px;
+}
+
+.timeline-list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.timeline-step {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%) scale(0.75);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #32ffb1, #00f0d4);
+    opacity: 0;
+    filter: blur(4px);
+    transition: all 0.7s ease;
+}
+
+.timeline-dot.active {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    filter: blur(0);
+}
+
+.timeline-dot::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: radial-gradient(circle, rgba(0, 240, 212, 0.15), transparent 70%);
+    border-radius: 9999px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.timeline-dot.active::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.timeline-card {
+    background: #262626;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 0.875rem;
+    position: relative;
+    z-index: 20;
+    color: #fff;
+}
+
+.timeline-year {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+
+@media (max-width: 680px) {
+    .timeline-header {
+        position: static;
+        /* фиксируем заголовок */
+    }
+
+    .timeline-line {
+        top: 5rem;
+        height: 1280px;
+    }
+}
+
+@media (min-width: 425px) {
+    .timeline-line {
+        top: 4rem;
+    }
+}
