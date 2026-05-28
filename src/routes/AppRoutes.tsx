@@ -5,7 +5,7 @@ import HomePage from "@/modules/home/pages/HomePage";
 import ErrorPage from "@/shared/pages/ErrorPage";
 import ContactPage from "@/modules/home/pages/ContactPage";
 import { useEffect, useState } from "react";
-import Loader from "@/shared/components/dataDisplay/preloader/Loader";
+// import Loader from "@/shared/components/dataDisplay/preloader/Loader";
 import DashboardPage from "@/modules/lk/pages/dashboard/DashboardPage";
 import WalletsPage from "@/modules/lk/pages/wallets/WalletsPage";
 import WalletDetailsPage from "@/modules/lk/pages/wallets/WalletDetailsPage";
@@ -36,9 +36,9 @@ export default function AppRoutes() {
 		}
 	}, [location.pathname]);
 
-	if (loading) {
-		return <Loader />;
-	}
+	// if (loading) {
+	// 	return <Loader />;
+	// }
 
 	return (
 		<Routes>

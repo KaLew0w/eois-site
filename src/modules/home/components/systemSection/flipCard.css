@@ -172,3 +172,223 @@
   color: black;
   margin-left: auto;
 }
+
+.system-card-header-eois {
+	justify-content: space-between;
+}
+
+.system-card-brand {
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: -0.04em;
+	color: #fff;
+}
+
+.system-card-brand::first-letter {
+	color: #32ffb1;
+}
+
+.system-card-step {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: linear-gradient(to right, #32ffb1, #00f0d4);
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.95rem;
+	font-weight: 500;
+}
+
+.system-card-kicker {
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: rgba(0, 0, 0, 0.45);
+	margin-bottom: 0.75rem;
+}
+
+.system-card-desc {
+	margin-top: 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: rgba(0, 0, 0, 0.72);
+	max-width: 90%;
+}
+
+.system-front-items {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+	margin-top: 1.35rem;
+}
+
+.system-front-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	font-size: 0.95rem;
+	line-height: 1.45;
+	color: rgba(0, 0, 0, 0.78);
+}
+
+.system-card-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+}
+
+.system-card-more {
+	font-size: 0.9rem;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+.system-card-back .system-card-more {
+	color: rgba(255, 255, 255, 0.65);
+}
+
+.system-card-back .system-card-kicker,
+.system-card-back .system-card-desc,
+.system-card-back .system-front-item {
+	color: #fff;
+}
+
+/* EOIS card polish */
+
+.system-card {
+	height: 430px;
+	overflow: hidden;
+}
+
+.system-card-header {
+	height: 64px;
+}
+
+.system-card-header-eois {
+	justify-content: space-between;
+}
+
+.system-card-logo {
+	height: 30px;
+	width: auto;
+	object-fit: contain;
+	display: block;
+}
+
+.system-card-step {
+	width: 34px;
+	height: 34px;
+	font-size: 0.8rem;
+	font-weight: 500;
+	flex-shrink: 0;
+}
+
+.system-card-body {
+	padding: 1.35rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 0;
+	overflow: hidden;
+}
+
+.system-card-body > div:first-child {
+	min-height: 0;
+}
+
+.system-card-kicker {
+	font-size: 0.78rem;
+	margin-bottom: 0.65rem;
+}
+
+.system-card-title {
+	font-size: 1.12rem;
+	line-height: 1.35;
+	margin: 0;
+}
+
+.system-card-desc {
+	margin-top: 0.65rem;
+	font-size: 0.95rem;
+	line-height: 1.45;
+	max-width: 100%;
+}
+
+.system-front-items {
+	margin-top: 1rem;
+	gap: 0.5rem;
+}
+
+.system-front-item {
+	font-size: 0.9rem;
+	line-height: 1.35;
+}
+
+.system-items {
+	gap: 0.55rem;
+}
+
+.system-item {
+	font-size: 0.9rem;
+	line-height: 1.35;
+}
+
+.system-card-footer {
+	margin-top: auto;
+	padding-top: 0.75rem;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.system-card-more {
+	font-size: 0.85rem;
+}
+
+/* Fix 3D flip rendering */
+
+.system-card-wrapper {
+	perspective: 1200px;
+}
+
+.system-card {
+	overflow: visible !important;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	will-change: transform;
+}
+
+.system-card-face {
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.system-card-front {
+	transform: rotateY(0deg) translateZ(1px);
+	z-index: 2;
+}
+
+.system-card-back {
+	transform: rotateY(180deg) translateZ(1px);
+	z-index: 1;
+	background: #000;
+	color: #fff;
+}
+
+.system-card-wrapper:hover .system-card {
+	transform: rotateY(180deg);
+}
+
+.system-card-wrapper:hover .system-card-front {
+	z-index: 1;
+}
+
+.system-card-wrapper:hover .system-card-back {
+	z-index: 2;
+}

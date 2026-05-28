@@ -76,7 +76,7 @@ export default function HeaderHomePage({
 						<div className="header-buttons">
 							<ButtonLang />
 							<CtaButton text={t("home.header.cta_apply")} />
-							<CtaButton text={t("home.header.cta_login")} />
+							{/* <CtaButton text={t("home.header.cta_login")} /> */}
 						</div>
 
 						{/* <!-- Бургер для мобилки --> */}

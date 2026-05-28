@@ -1,19 +1,30 @@
 import "./timelineStyle.css";
 import { useTranslation } from "react-i18next";
-import { Fragment, useEffect, useRef } from "react";
+import { Fragment, useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function TimelineSections() {
 	const { t } = useTranslation();
+
 	const timelineItems = t("home.timeline.items", {
 		returnObjects: true,
 	}) as any[];
 
+	const containerRef = useRef<HTMLDivElement | null>(null);
+	const titleRef = useRef<HTMLHeadingElement | null>(null);
+	const titleAnimatedRef = useRef(false);
+	const titleTweenRef = useRef<gsap.core.Tween | null>(null);
+
 	useEffect(() => {
-		const options = { root: null, rootMargin: "0px", threshold: 0.8 };
+		const root = containerRef.current;
+		if (!root) return;
+
+		const options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0.8,
+		};
+
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry, index) => {
 				const dot = entry.target.querySelector("[data-dot]");
@@ -29,43 +40,61 @@ export default function TimelineSections() {
 			});
 		}, options);
 
-		document.querySelectorAll(".timeline-step").forEach((el) => {
+		root.querySelectorAll(".timeline-step").forEach((el) => {
 			observer.observe(el);
 		});
 
 		return () => observer.disconnect();
 	}, []);
 
-	const titleRef = useRef<HTMLHeadingElement | null>(null);
+	useLayoutEffect(() => {
+		const title = titleRef.current;
+		if (!title) return;
 
-	useEffect(() => {
-		if (!titleRef.current) return;
+		gsap.set(title, {
+			rotateX: 90,
+			scale: 0.7,
+			autoAlpha: 0,
+			transformPerspective: 1000,
+			transformOrigin: "50% 50%",
+		});
 
-		gsap.fromTo(
-			titleRef.current,
-			{
-				rotateX: 90,
-				scale: 0.7,
-				opacity: 0,
-				transformPerspective: 1000,
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const entry = entries[0];
+
+				if (entry.isIntersecting && !titleAnimatedRef.current) {
+					titleAnimatedRef.current = true;
+
+					titleTweenRef.current = gsap.to(title, {
+						rotateX: 0,
+						scale: 1,
+						autoAlpha: 1,
+						duration: 1.2,
+						ease: "power3.out",
+						clearProps: "transform",
+					});
+
+					observer.disconnect();
+				}
 			},
 			{
-				rotateX: 0,
-				scale: 1,
-				opacity: 1,
-				duration: 1.2,
-				ease: "power3.out",
-				scrollTrigger: {
-					trigger: titleRef.current,
-					start: "top 80%",
-					toggleActions: "play none none none",
-				},
+				root: null,
+				threshold: 0.25,
+				rootMargin: "0px 0px -25% 0px",
 			},
 		);
+
+		observer.observe(title);
+
+		return () => {
+			observer.disconnect();
+			titleTweenRef.current?.kill();
+		};
 	}, []);
 
 	return (
-		<div className="timeline-container">
+		<div ref={containerRef} className="timeline-container">
 			<div className="timeline-header">
 				<h2 ref={titleRef} className="timeline-title">
 					{t("home.timeline.title_prefix")} <br />
@@ -84,15 +113,18 @@ export default function TimelineSections() {
 
 			<div className="timeline-items">
 				<div className="timeline-line"></div>
+
 				<div className="timeline-list">
 					{timelineItems.map((item: any, i: number) => (
 						<div className="timeline-step" key={i}>
 							<div className="timeline-dot" data-dot></div>
+
 							<div className="timeline-card">
 								<div className="timeline-year">
 									{item.year}{" "}
 									<span className="timeline-month">{item.month}</span>
 								</div>
+
 								<p>{item.desc}</p>
 							</div>
 						</div>

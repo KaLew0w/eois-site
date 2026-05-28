@@ -10,6 +10,11 @@ import CreateSystemSection from "./createSystemSection/CreateSystemSection";
 import ContactSection from "./contactSection/ContactSection";
 import PartnersSection from "./partnersSection/PartersSection";
 import CarouselTabs from "./servicesTabs/CarouselTabs";
+import TasksSection from "./tasksSection/TasksSection";
+import GchpSection from "./gchpSection/GchpSection";
+import SecuritySection from "./securitySection/SecuritySection";
+import DocumentsSection from "./documentsSection/DocumentsSection";
+import FAQSection from "./faqSection/FAQSection";
 import { Cards } from "./servicesTabs/Cards";
 import Image6 from "@/assets/images/image6.png";
 import Image7 from "@/assets/images/image7.png";
@@ -80,6 +85,7 @@ export default function ContentHomePage({
 		<Content>
 			<AboutUsSection />
 			<CreateSystemSection />
+			<TasksSection />
 			<ServicesTabs
 				id="services"
 				tabs={[
@@ -107,7 +113,11 @@ export default function ContentHomePage({
 			/>
 			<Marquee />
 			<StatisticSection />
+			<GchpSection />
+			<SecuritySection />
+			<DocumentsSection />
 			<SystemInfoSection />
+			<FAQSection />
 			<ContactSection />
 			<PartnersSection />
 		</Content>

@@ -11,97 +11,107 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 
-const formatter: StatisticProps["formatter"] = (value) => (
-	<CountUp
-		end={value as number}
-		separator="."
-		decimals={Number.isInteger(value) ? 0 : 1} // ← количество знаков после запятой
-		decimal="." // ← символ разделителя (по умолчанию ".")
-	/>
-);
+const formatter: StatisticProps["formatter"] = (value) => {
+	const numericValue = typeof value === "number" ? value : Number(value);
+
+	return (
+		<CountUp
+			end={numericValue}
+			separator="."
+			decimals={Number.isInteger(numericValue) ? 0 : 1}
+			decimal="."
+		/>
+	);
+};
 
 const { Paragraph } = Typography;
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function StatisticSection() {
 	const { t } = useTranslation();
+
 	const titleRef = useRef<HTMLHeadingElement | null>(null);
 	const titleRef2 = useRef<HTMLHeadingElement | null>(null);
 
 	useEffect(() => {
-		if (titleRef.current) {
-			gsap.fromTo(
-				titleRef.current,
-				{
-					rotateX: 90,
-					scale: 0.7,
-					opacity: 0,
-					transformPerspective: 1000,
-				},
-				{
-					rotateX: 0,
-					scale: 1,
-					opacity: 1,
-					duration: 1.2,
-					ease: "power3.out",
-					scrollTrigger: {
-						trigger: titleRef.current,
-						start: "top 80%",
-						toggleActions: "play none none none",
+		const ctx = gsap.context(() => {
+			if (titleRef.current) {
+				gsap.fromTo(
+					titleRef.current,
+					{
+						rotateX: 90,
+						scale: 0.7,
+						opacity: 0,
+						transformPerspective: 1000,
 					},
-				},
-			);
-		}
+					{
+						rotateX: 0,
+						scale: 1,
+						opacity: 1,
+						duration: 1.2,
+						ease: "power3.out",
+						scrollTrigger: {
+							trigger: titleRef.current,
+							start: "top 80%",
+							toggleActions: "play none none none",
+						},
+					},
+				);
+			}
 
-		if (titleRef2.current) {
-			gsap.fromTo(
-				titleRef2.current,
-				{
-					rotateX: 90,
-					scale: 0.7,
-					opacity: 0,
-					transformPerspective: 1000,
-				},
-				{
-					rotateX: 0,
-					scale: 1,
-					opacity: 1,
-					duration: 1.2,
-					ease: "power3.out",
-					scrollTrigger: {
-						trigger: titleRef2.current, // ← тут должно быть titleRef2
-						start: "top 80%",
-						toggleActions: "play none none none",
+			if (titleRef2.current) {
+				gsap.fromTo(
+					titleRef2.current,
+					{
+						rotateX: 90,
+						scale: 0.7,
+						opacity: 0,
+						transformPerspective: 1000,
 					},
-				},
-			);
-		}
+					{
+						rotateX: 0,
+						scale: 1,
+						opacity: 1,
+						duration: 1.2,
+						ease: "power3.out",
+						scrollTrigger: {
+							trigger: titleRef2.current,
+							start: "top 80%",
+							toggleActions: "play none none none",
+						},
+					},
+				);
+			}
+		});
+
+		return () => ctx.revert();
 	}, []);
 
 	const items = [
 		{
-			value: 150,
-			suffix: "+",
+			value: 1,
+			suffix: "",
 			description: t("home.statistics.items.0.desc"),
 		},
 		{
-			value: t("home.statistics.country"),
+			value: 6,
 			suffix: "",
 			description: t("home.statistics.items.1.desc"),
 		},
 		{
-			value: 10,
+			value: 5,
 			suffix: "",
 			description: t("home.statistics.items.2.desc"),
 		},
 		{
-			value: 99.8,
-			suffix: "%",
+			value: "API",
+			suffix: "",
 			description: t("home.statistics.items.3.desc"),
 		},
 		{
-			value: 100,
-			suffix: "%",
+			value: "ГЧП",
+			suffix: "",
 			description: t("home.statistics.items.4.desc"),
 		},
 	];
@@ -134,14 +144,15 @@ export default function StatisticSection() {
 	];
 
 	const { ref, inView } = useInView({
-		triggerOnce: false, // анимация запускается
-		threshold: 0.2, // сработает, когда 20% блока видно
+		triggerOnce: false,
+		threshold: 0.2,
 	});
 
 	return (
-		<section className="financial-section">
+		<section className="financial-section" id="capabilities">
 			<div className="container">
-				<img src={Earth} alt="earth" className="earth-image" />
+				<img src={Earth} alt="EOIS digital infrastructure" className="earth-image" />
+
 				<div>
 					<h2
 						ref={titleRef}
@@ -162,11 +173,11 @@ export default function StatisticSection() {
 						>
 							{items.map((item, index) => (
 								<Col
-								className={`item-statistic ${index === 0 ? "first" : ""}`}
+									className={`item-statistic ${index === 0 ? "first" : ""}`}
 									key={index}
-									xs={24} // ≤576px → 2 колонки
-									sm={12} // ≥576px → 2 колонки
-									md={4} // ≥768px → ~5 колонок (4/24 ширины = 1/6, близко к 5 колонкам)
+									xs={24}
+									sm={12}
+									md={4}
 								>
 									{typeof item.value === "string" ? (
 										<Title
@@ -190,12 +201,16 @@ export default function StatisticSection() {
 												fontSize: "1.875rem",
 												fontWeight: 500,
 												lineHeight: "2.25rem",
-												// fontWeight: "500"
 											}}
 										/>
 									)}
+
 									<Paragraph
-										style={{ fontSize: "1.25rem", margin: 0, color: "white" }}
+										style={{
+											fontSize: "1.25rem",
+											margin: 0,
+											color: "white",
+										}}
 									>
 										{item.description}
 									</Paragraph>
@@ -204,7 +219,6 @@ export default function StatisticSection() {
 						</Row>
 					</div>
 
-					{/* Второй заголовок */}
 					<div className="relative z-10 pt-16">
 						<h2
 							ref={titleRef2}
@@ -217,7 +231,6 @@ export default function StatisticSection() {
 						</h2>
 					</div>
 
-					{/* Карточки */}
 					<div className="cards-grid">
 						{itemsCard.map((item, index) => (
 							<div key={index} className="card-financial">
@@ -226,6 +239,7 @@ export default function StatisticSection() {
 							</div>
 						))}
 					</div>
+
 					<TimelineSections />
 				</div>
 			</div>

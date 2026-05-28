@@ -33,7 +33,7 @@ export default function Marquee() {
     >
       <div className="marquee-track" ref={trackRef}>
         <span>
-          theonetheonetheonetheonetheonetheonetheonetheonetheonetheonetheonetheone
+          ЕОИС · МОНИТОРИНГ · КОНТРОЛЬ · АНАЛИТИКА · ПРОЗРАЧНОСТЬ · ЕОИС · МОНИТОРИНГ · КОНТРОЛЬ · АНАЛИТИКА · ПРОЗРАЧНОСТЬ ·
         </span>
       </div>
     </div>

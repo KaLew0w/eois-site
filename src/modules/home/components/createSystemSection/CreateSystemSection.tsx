@@ -1,4 +1,5 @@
 import Landing from "@/assets/features/Landing.png";
+import Credit from "@/assets/features/Credit_card.png";
 import LongRightArrow from "@/assets/images/long-right-arrow.png";
 import Shield from "@/assets/features/shield.png";
 import Bitcoin from "@/assets/features/Bitcoin.png";
@@ -140,7 +141,7 @@ export default function CreateSystemSection() {
 										{t("home.features.license_desc")}
 									</p>
 								</div>
-								<div className="absolute bottom-0 right-[10px] z-0">
+								<div className="absolute top-1/2 right-[10px] z-0 -translate-y-1/2">
 									<img
 										alt="Shield"
 										className="w-44 h-44 object-contain select-none pointer-events-none"
@@ -159,7 +160,7 @@ export default function CreateSystemSection() {
 										{t("home.features.multicurrency_desc")}
 									</p>
 								</div>
-								<div className="absolute bottom-0 right-[10px] z-0">
+								<div className="absolute top-1/2 right-[10px] z-0 -translate-y-1/2">
 									<img
 										alt="Bitcoin"
 										className="w-44 h-44 object-contain select-none pointer-events-none"
@@ -178,11 +179,30 @@ export default function CreateSystemSection() {
 										{t("home.features.unified_desc")}
 									</p>
 								</div>
-								<div className="absolute bottom-0 right-[10px] z-0">
+								<div className="absolute top-1/2 right-[10px] z-0 -translate-y-1/2">
 									<img
 										alt="Landing"
 										className="w-44 h-44 object-contain select-none pointer-events-none"
 										src={Landing}
+									/>
+								</div>
+							</div>
+
+							{/* <!-- Карточка 4 --> */}
+							<div className="min-w-[420px] max-w-[420px] p-6 rounded-2xl relative overflow-visible bg-white bg-[radial-gradient(circle_at_100%_100%,#32FFB1_0%,#ffffff_25%)]">
+								<div className="relative z-10 w-1/2">
+									<h3 className="text-black font-light text-2xl mb-2">
+										{t("home.features.economic_title")}
+									</h3>
+									<p className="text-black text-sm leading-relaxed">
+										{t("home.features.economic_desc")}
+									</p>
+								</div>
+								<div className="absolute top-1/2 right-[10px] z-0 -translate-y-1/2">
+									<img
+										alt="Credit"
+										className="w-44 h-44 object-contain select-none pointer-events-none"
+										src={Credit}
 									/>
 								</div>
 							</div>

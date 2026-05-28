@@ -149,3 +149,8 @@
         top: 4rem;
     }
 }
+
+.timeline-title {
+	transform-origin: 50% 50%;
+	will-change: transform, opacity;
+}

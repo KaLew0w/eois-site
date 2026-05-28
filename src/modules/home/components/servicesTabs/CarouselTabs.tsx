@@ -109,12 +109,17 @@ export default function CarouselTabs({ items }: CarouselProps) {
 									<img
 										src={images[index % images.length].mobile}
 										alt="..."
-										className="block md:hidden w-full max-h-[200px] object-cover rounded-2xl"
+										draggable={false}
+										onDragStart={(e) => e.preventDefault()}
+										className="block md:hidden w-full max-h-[200px] object-cover rounded-2xl carousel-image"
 									/>
+
 									<img
 										src={images[index % images.length].desktop}
 										alt="..."
-										className="hidden md:block w-full h-[420px] object-cover rounded-2xl"
+										draggable={false}
+										onDragStart={(e) => e.preventDefault()}
+										className="hidden md:block w-full h-[420px] object-cover rounded-2xl carousel-image"
 									/>
 								</div>
 

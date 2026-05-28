@@ -110,7 +110,7 @@ export default function ContactPage() {
 										<h2 className="text-2xl font-light mb-2">
 											{t("home.contactForm.contact_email")}
 										</h2>
-										<p className="text-white/80 text-base">info@the-one.asia</p>
+										<p className="text-white/80 text-base">info@eois.kg</p>
 									</div>
 									<div>
 										<h2 className="text-2xl font-light mb-2">
